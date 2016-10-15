@@ -1,0 +1,45 @@
+<ion-view view-title="PIANO TEMATICO">
+  <ion-content class="padding">
+
+
+ <div ng-show="mostrarInstrumentos">
+     <div class="row">
+       
+        <div class="col"><button class="button button-outline button-light" ng-click="reproducir(0)"><img src="imagenes/guitarra.png"> </button></div>
+       
+        <div class="col"><button class="button button-outline button-light" ng-click="reproducir(1)" ><img src="imagenes/flauta.png"> </button></div>
+        
+        
+
+    </div>
+    <div class="row">
+        <div class="col"><button class="button button-outline button-light" ng-click="reproducir(2)"><img src="imagenes/arpa.png"></button></div>
+
+         <div class="col"><button class="button button-outline button-light" ng-click="reproducir(3)"><img src="imagenes/bateria.png"> </button></div>
+    </div>
+    <div class="row">
+       
+  
+        <div class="col"><button class="button button-outline button-light" ng-click="reproducir(4)"><img src="imagenes/violin.png"> </button></div>
+
+        <div class="col"><button class="button button-outline button-light" ng-click="reproducir(5)"><img src="imagenes/piano.png"></button></div>
+  
+    </div>
+ </div>
+    <div align="center">
+       
+  
+        <div align="center"><button class="button button-outline button-positive" 
+      ng-click="repSecuencia()" ng-show="showBtnGuardar" >Guardar melodia</button></div>
+
+        <div align="center"><button class="button button-outline button-positive" 
+      ng-click="volverJugar()" ng-show="showBtnVolver" >Volver a Jugar</button></div>
+  
+    </div>
+
+<div  align="center" style="color: red"><b>{{lista}} </b></div>
+    
+
+      
+  </ion-content>
+</ion-view>
